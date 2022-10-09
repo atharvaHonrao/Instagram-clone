@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Phase2</string>
+    <string name="Edit_Profile">Edit Profile</string>
+    <string name="Edit_Profile_Photo">Edit Profile Photo</string>
+    <string name="Done">Done</string>
+    <string name="Bio">Bio</string>
+    <string name="Full_Name">Full Name</string>
+    <string name="img"> Profile Image</string>
+    <string name="Grid">Grid Photos</string>
+    <string name="Posts">Posts</string>
+    <string name="Followers">Followers</string>
+    <string name="Following">Following</string>
+    <string name="User_Name">User Name</string>
+    <string name="Profile">Profile</string>
+</resources>
