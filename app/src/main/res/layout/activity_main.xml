@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/page_bor"
+    android:background="@color/Background_color"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="145dp"
         android:layout_height="34dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:text="@string/Edit_Profile"
-        android:textSize="28sp"
+        android:textColor="@color/text_color"
 
+        android:textSize="28sp"
         app:autoSizeTextType="none"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,27 +23,30 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="145dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
         android:clickable="true"
         android:focusable="true"
         android:minHeight="48dp"
         android:text="@string/Edit_Profile_Photo"
-        android:textColor="@color/blue_n"
+        android:textColor="#03A9F4"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView2"
-        android:layout_width="149dp"
-        android:layout_height="141dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="5dp"
         android:contentDescription="@string/img"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/img_1" />
+        app:shapeAppearanceOverlay="@style/circle"
+        app:srcCompat="@drawable/cric" />
 
     <TextView
         android:id="@+id/textView4"
@@ -50,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/Full_Name"
-        android:textColor="@color/grey"
+        android:textColor="@color/text_color"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/fullName"
         app:layout_constraintTop_toBottomOf="@+id/enterUser" />
@@ -67,7 +71,8 @@
         android:minHeight="48dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:textColorHint="#A1887F"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/text_color"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -80,8 +85,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/Bio"
-        android:textColor="@color/grey"
+        android:textColor="@color/text_color"
         android:textSize="16sp"
+        android:visibility="visible"
         app:layout_constraintStart_toStartOf="@+id/bioName"
         app:layout_constraintTop_toBottomOf="@+id/fullName" />
 
@@ -97,8 +103,10 @@
         android:minHeight="48dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:textColorHint="#A1887F"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/text_color"
         android:textSize="20sp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -108,10 +116,11 @@
         android:id="@+id/done"
         android:layout_width="191dp"
         android:layout_height="48dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="30dp"
         android:onClick="some"
         android:text="@string/Done"
-        app:backgroundTint="#E26C6767"
+        android:textColor="@color/text_color"
+        app:backgroundTint="@color/edittext_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -121,9 +130,10 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:text="@string/User_Name"
-        android:textColor="@color/grey"
+        android:textColor="@color/text_color"
+        android:textColorHint="#3E3131"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/enterUser"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -139,10 +149,12 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:paddingLeft="10dp"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/text_color"
         android:textIsSelectable="true"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 

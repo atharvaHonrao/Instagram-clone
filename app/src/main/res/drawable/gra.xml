@@ -4,10 +4,10 @@
 
     <gradient
 
-        android:startColor="@color/light_grey"
-        android:centerColor="@color/white"
-        android:endColor="@color/white"
-        android:angle="@integer/material_motion_duration_long_1"
+        android:startColor="@color/intermediate_color"
+        android:centerColor="@color/edittext_color"
+        android:endColor="@color/edittext_color"
+        android:angle="18"
         />
 
 

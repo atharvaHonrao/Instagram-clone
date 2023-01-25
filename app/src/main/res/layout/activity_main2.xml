@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/border"
     tools:context=".MainActivity2">
 
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="340dp"
+        android:background="@drawable/gra"
         android:contentDescription="@string/Grid"
         android:scrollbars="none"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/gra"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
@@ -27,37 +28,36 @@
             app:rowCount="3">
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/imageView1"
                 android:layout_width="150dp"
                 android:layout_height="200dp"
                 android:layout_margin="12dp"
                 android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/img"
-
-                />
-
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/imageView5"
-                android:layout_width="150dp"
-                android:layout_height="200dp"
-                android:layout_margin="12dp"
-                android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/img_3"
                 app:shapeAppearanceOverlay="@style/r"
-                />
+
+                app:srcCompat="@drawable/img_4" />
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/imageView2"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_margin="12dp"
+                android:layout_marginTop="30dp"
+                app:shapeAppearanceOverlay="@style/r"
+                app:srcCompat="@drawable/img_3" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView3"
                 android:layout_width="150dp"
                 android:layout_height="200dp"
                 android:layout_margin="12dp"
                 android:layout_marginBottom="30dp"
                 app:shapeAppearanceOverlay="@style/r"
-                app:srcCompat="@drawable/img_4" />
+                app:srcCompat="@drawable/img" />
 
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/imageView4"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="12dp"
@@ -79,25 +79,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/imageView"
-            android:layout_width="188dp"
-            android:layout_height="157dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
             android:contentDescription="@string/Edit_Profile_Photo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:srcCompat="@drawable/img_1" />
+            app:shapeAppearanceOverlay="@style/circle"
+            app:srcCompat="@drawable/cric" />
 
         <TextView
             android:id="@+id/userName"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
+            android:layout_marginTop="5dp"
             android:paddingLeft="10sp"
             android:paddingRight="10sp"
             android:text="Lilly Blossom"
-            android:textColor="#000000"
+            android:textColor="@color/text_color"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -110,7 +113,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/Profile"
-            android:textColor="#000000"
+            android:textColor="@color/text_color"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -125,7 +128,7 @@
             android:layout_marginLeft="45dp"
             android:layout_marginBottom="24dp"
             android:text="@string/Posts"
-            android:textColor="#AEAEAE"
+            android:textColor="@color/text_color"
             android:textSize="17sp"
             app:layout_constraintBottom_toTopOf="@+id/textView9"
             app:layout_constraintStart_toStartOf="parent" />
@@ -137,7 +140,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:text="4"
-            android:textColor="#000000"
+            android:textColor="@color/text_color"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/textView11"
             app:layout_constraintEnd_toEndOf="@+id/textView8"
@@ -164,7 +167,7 @@
             android:layout_marginEnd="24dp"
             android:layout_marginRight="24dp"
             android:text="450"
-            android:textColor="#000000"
+            android:textColor="@color/text_color"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="@+id/textView10"
             app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -177,7 +180,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="11dp"
             android:text="390"
-            android:textColor="#000000"
+            android:textColor="@color/text_color"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/textView11"
             app:layout_constraintStart_toStartOf="@+id/textView13"
@@ -192,7 +195,7 @@
             android:layout_marginRight="36dp"
             android:layout_marginBottom="24dp"
             android:text="@string/Following"
-            android:textColor="#AEAEAE"
+            android:textColor="@color/text_color"
             android:textSize="17sp"
             app:layout_constraintBottom_toTopOf="@+id/textView12"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -202,8 +205,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="Sometimes I cook And I like to dhow then"
-            android:textColor="#AEAEAE"
+            android:text="No bio"
+            android:textColor="@color/text_color"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"

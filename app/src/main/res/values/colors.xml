@@ -11,4 +11,14 @@
     <color name="grey">#AEAEAE</color>
     <color name="blue_n">#22DEDB</color>
     <color name="light_grey">#EDEDED</color>
+<!--    <color name="Background_color">#2D1060</color>-->
+<!--    <color name="intermediate_color">#3e1c7d</color>-->
+<!--    <color name="edittext_color">#693BC8</color>-->
+<!--    <color name="text_color">#BCAADC</color>-->
+
+<!--    <color name="Background_color">#1F1F1F</color>-->
+    <color name="Background_color">#131313</color>
+    <color name="intermediate_color">#313131</color>
+    <color name="edittext_color">#3B3B3B</color>
+    <color name="text_color">#AEAEAE</color>
 </resources>
